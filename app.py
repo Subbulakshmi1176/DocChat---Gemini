@@ -6,8 +6,8 @@ import io
 import re
 
 # --- Streamlit Chatbot UI ---
-st.set_page_config(page_title="📄 Docuchat Gemini Chatbot", layout="wide")
-st.title("📄 Docuchat - Gemini Chatbot")
+st.set_page_config(page_title="📄 Docchat Gemini Chatbot", layout="wide")
+st.title("📄 Docchat - Gemini Chatbot")
 
 # Initialize chat history
 if "chat_history" not in st.session_state:
@@ -85,3 +85,5 @@ for i, msg in enumerate(st.session_state.chat_history):
 with st.form(key="chat_input_form", clear_on_submit=True):
     user_input = st.text_input("Type your question here:", key="user_input", placeholder="Type and press Enter to send...")
     submit_button = st.form_submit_button(label="Send", on_click=send_message)
+
+
